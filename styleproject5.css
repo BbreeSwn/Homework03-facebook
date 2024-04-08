@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  body {
+    max-width: 1200px;
+    margin: auto;
+    background: lightskyblue;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  nav a:hover{
+    font-size: 150%;
+}
+
+  footer {
+    min-height: 60px;
+    display:grid;
+    place-items: left;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+  /* Header */
+
+  header {
+    border-bottom: 3px solid coral;
+  }
+
+header .container{
+    min-height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header h1{
+    color:white
+}
+
+.branding span {
+    color:deeppink
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+}
+header nav a{
+    padding: 4px 8px;
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+
+.active {
+    background-color: deeppink;
+
+}
+
+
+/* home Showcase */
+.showcase {
+    display: flex;
+    min-height: 400px;
+    background: url("https://picsum.photos/id/2/1500/500/?blur=4") no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.showcase .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 1rem;
+}
+.showcase .container h1{
+    color: white;
+    font-size: 60px;
+}
+
+.showcase .container p {
+    color:deeppink;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* newsletter */
+
+.newsletter .container {
+    padding: 15px;
+    display: flex;
+    background-color: lightskyblue;
+    color: coral;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter form {
+    height: 35px;
+}
+
+.newsletter input {
+    height: 100%;
+    width:250px;
+    padding: 8px;
+    border:none;
+    border-radius: 8px;
+}
+
+.newsletter button {
+height: 100%;
+background-color: coral;
+border-radius: 4px;
+padding: 0 20px;
+}
+
+/* boxes */
+.boxes {
+    padding: 30px 0;
+    background-color: lightblue;
+}
+
+.boxes .container  {
+    text-align: center;
+    gap: 12px;
+    justify-content: space-between;
+    width: 90%;
+    }
+
+.box img {
+    height: 120px;
+}
+
+/* About */
+
+.main {
+    background-color: lightblue;
+    max-width: 100%;
+
+}
+
+.container .about , .container .service {
+display: flex;
+justify-content: space-between;
+flex-direction: column;
+flex:1 0 70%;
+text-align: left;
+font-size: 18px;
+margin-top: 10px;
+padding:1.5rem;
+margin: 15px;
+}
+
+.container .sidebar{
+    background-color: violet;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+    padding: 15px;
+    color: white;
+    margin-top: 35px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.service ul > li {
+    font-size: 18;
+    font-weight: bold;
+}
+
+
+
+
